@@ -28,12 +28,13 @@ class Pricing extends Component {
             <div className="pricing_description">
               description
             </div>
+            <div className="pricing_buttons">
             <MyButton 
-              className="pricing_buttons"
               text="Purchase"
-              bck="#ffa80 0"
+              bck="#ffa800"
               link={this.state.linkto[i]}
             />
+            </div>
           </div>
         </div>
       </Zoom>
