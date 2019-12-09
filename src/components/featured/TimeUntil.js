@@ -1,26 +1,26 @@
 import React from 'react';
 import Slide from 'react-reveal/Slide';
 
-
 class TimeUntil extends React.Component {
   
   state = {
-    deadline: 'Dec, 20, 2019',
+    deadline: 'Jan 5, 2020 15:00:00',
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0
   }
 
+
   getTimeUntil(deadline) {
     const time = Date.parse(deadline) - Date.parse(new Date());
     if(time < 0) {
       console.log('Date passed');
     } else {
-      const seconds = Math.floor((time/1000)%60);
-      const minutes = Math.floor((time/1000/60)%60);
-      const hours = Math.floor((time/(1000*60*60))%24);
-      const days = Math.floor(time/(1000*60*60*24));
+      const seconds = Math.floor((time % (1000 * 60)) / 1000); 
+      const minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)); 
+      const hours = Math.floor((time%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      const days = Math.floor(time / (1000 * 60 * 60 * 24));
 
       this.setState(() => ({
         dyas: days,
