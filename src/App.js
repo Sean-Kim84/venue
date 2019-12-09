@@ -4,7 +4,7 @@ import Featured from './components/featured';
 
 const App = () => {
   return (
-    <div className="App" style={{height: '1500px', background:'cornflowerblue '}}>
+    <div className="App">
       <Header />
       <Featured />
     </div>
