@@ -66,11 +66,15 @@ footer {
   text-align: center;
   font-size: 60px;
   color: #ffffff;
-  background: red;
+  background: black;
 }
 
 footer .footer_copyright {
   font-size: 18px;
+}
+
+footer_logo_venue {
+  font-weight: 600;
 }
 
 /*====================
