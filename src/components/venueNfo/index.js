@@ -27,6 +27,7 @@ const VenueNfo = () => {
             </div>
           </div>
           </Zoom>
+
           <Zoom duration={500}>
             <div className="vn_item">
               <div className="vn_outer">
@@ -44,9 +45,7 @@ const VenueNfo = () => {
             </div>
           </Zoom>
         </div>
-        
       </div>
-      
     </div>
   );
 }
