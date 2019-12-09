@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
+import MyButton from '../utils/MyButton';
+
 class Discount extends Component {
 
   state = {
@@ -38,15 +40,17 @@ class Discount extends Component {
             <div className="discount_description">
               <h3>Purchase ticket before the day</h3>
               <p>
-                Lorem Ipsum  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                Lorem Ips um  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
               </p>
-              <div>button</div>
+              <MyButton 
+                text="Purchase the Ticker"
+                bck="#ffa800"
+                color="#ffffff"
+                link="#"
+                />
             </div>  
           </Slide>
-          
-        </div>
-
-        
+        </div>  
       </div>
     );
   }
