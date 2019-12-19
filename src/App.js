@@ -10,8 +10,6 @@ import Pricing from './components/pricing';
 import Location from './components/location';
 import Footer from './components/header_footer/Footer';
 
-
-
 const App = () => {
   return (
     <div className="App">
