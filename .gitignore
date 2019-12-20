@@ -2,7 +2,7 @@
 
 # dependencies
 /.netlify
-/node_modules
+
 /.pnp
 .pnp.js
 
@@ -24,3 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 
 *.lock 
+node_modules
